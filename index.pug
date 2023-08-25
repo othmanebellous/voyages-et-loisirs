@@ -1,0 +1,69 @@
+include includes/variables
+include includes/mixins
+doctype
+html(lang="fr")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="styles/style.css")
+        script(src="https://kit.fontawesome.com/d24203c984.js" crossorigin="anonymous")
+        title Voyages & Loisirs
+    body
+        header(class="flexSpaceBetween container")
+            .logo
+                a(href="#")
+                    img.logo-img(src="/images/logo.png", alt="logo")
+            .follow-us Suivez-nous
+                .social-links
+                    a.social-link(href="#")
+                        img(src="/images/pinterest.png", alt="pinterest")
+                    a.social-link(href="#")
+                        img(src="/images/instagram.png", alt="instagram")
+                    a.social-link(href="#")
+                        img(src="/images/facebook.png", alt="facebook")
+        main
+            section(class="hero flexAlignCenter")
+                .container
+                    .text
+                        h1.hero-title Lorem ipsum dolor sit amet consec tetur adipi
+                        p.hero-paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna ali quaisipsum suspendisse
+            section.container.advantages
+                h2.advantages-heading Vos avantages avec Voyages et Loisirs
+                ul.advantages-list
+                    li.advantage-1 Destinations choisies par nos experts avec un très bon rapport qualité-prix.
+                    li.advantage-2 Départs garantis pour un minimum de 3 personnes participantes.
+                    li.advantage-3 Tous les circuits sont accompagnés sur place par des guides diplômés francophones.
+                    li.advantage-4 Vols uniquement avec les compagnies aériennes régulières (pas de charters).
+                    li.advantage-5 Facilités de paiement sans frais jusqu'à 5 mensualités.
+                    li.advantage-6 Gratuité des frais de dossier (40€ par personne) pour toutes les réservations effectuées dans les 15 jours suivant la réception de la publicité.
+                    li.advantage-7 Possibilité de départs de province (nous consulter).
+                    li.advantage-8 Un site web disponible 7/24 pour choisir vos destinations en toute tranquillité. Nous vous appellerons selon vos disponibilités  souhaitées.
+                    li.advantage-9 Un service téléphonique pour réservation, renseignements, à votre disposition avant, pendant et après vos séjours.
+            section.destinations
+                h2.destination-heading Choisissez votre destination
+                .destination-tabs-wrapper
+                    .destination-tabs.container
+                        input(class="destination-input", type="radio", name="destinations", id="circuits" checked)
+                        label(class="destination-label flexCenter" for="circuits") Circuits accompagnés
+                        .destination-cards
+                            +destinationsCard
+                        input(class="destination-input", type="radio", name="destinations", id="croisieres")
+                        label(class="destination-label flexCenter" for="croisieres") Croisières
+                        .destination-cards
+                            +destinationsCard
+        footer 
+            .top-footer
+                div(class="container flexSpaceBetween")
+                    p.newsletter-paragraph #[b Inscrivez-vous] et recevez nos nouveautés et #[b offres] spéciales !
+                    form(class="form flexAlignCenter" action="", method="post")
+                        input(class="email-input" type="email", name="email", placeholder="E-mail")
+                        button(class="submit-btn flexCenter" type="submit") S'abonner
+            .bottom-footer 
+                div(class="container flexSpaceBetween")
+                    nav.legal-links
+                        a(class="footer-link" href="#") Mentions légales 
+                        a(class="footer-link" href="#") Conditions de vente
+                        a(class="footer-link" href="#") Politique de confidentialité
+                    p(class="copyright flexAlignCenter") Voyages et loisirs.fr &copy; #{date.getFullYear()} Tous les droits réservés
+                        img(src="/images/cookie.png", alt="")
+    script(src="script.js") 

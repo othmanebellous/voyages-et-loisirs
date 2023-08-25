@@ -1,0 +1,14 @@
+mixin destinationsCard
+    each destination in destinations 
+        article.destination-card
+            .destination-card-header
+                img(class="destination-card-img", src= destination.image)
+                button(class="destination-location flexCenter")
+            h3.destination-card-title #{destination.title}
+            div(class="destination-card-info flexAlignStart")
+                ul.destination-card-list
+                    li(class="bedrooms-info flexAlignCenter") Chambre double
+                    li(class="meals-info flexAlignCenter") Repas selon le programme
+                    li(class="flights-info flexAlignCenter") Vols inclus
+                .destination-card-pricing A partir #[strong.price #{destination.price} €] TTC / presonne
+                    a(class="discover-link flexCenter", href="#{destination.link}") Découvrir
