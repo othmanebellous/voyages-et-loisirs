@@ -153,56 +153,56 @@ a{
 
 .advantage-1{
     &::before{
-        content: url(/images/advantage-1.png);
+        content: url(../images/advantage-1.png);
     }
     border-top: 1px solid rgba(0, 0, 0, 0.18);
 }
 
 .advantage-2{
     &::before{
-        content: url(/images/advantage-2.png);
+        content: url(../images/advantage-2.png);
     }
 }
 
 .advantage-3{
     &::before{
-        content: url(/images/advantage-3.png);
+        content: url(../images/advantage-3.png);
     }
 }
 
 .advantage-4{
     &::before{
-        content: url(/images/advantage-4.png);
+        content: url(../images/advantage-4.png);
     }
 }
 
 .advantage-5{
     &::before{
-        content: url(/images/advantage-5.png);
+        content: url(../images/advantage-5.png);
     }
 }
 
 .advantage-6{
     &::before{
-        content: url(/images/advantage-6.png);
+        content: url(../images/advantage-6.png);
     }
 }
 
 .advantage-7{
     &::before{
-        content: url(/images/advantage-7.png);
+        content: url(../images/advantage-7.png);
     }
 }
 
 .advantage-8{
     &::before{
-        content: url(/images/advantage-8.png);
+        content: url(../images/advantage-8.png);
     }
 }
 
 .advantage-9{
     &::before{
-        content: url(/images/advantage-9.png);
+        content: url(../images/advantage-9.png);
     }
 }
 
@@ -302,7 +302,7 @@ a{
     background-color: #fff;
     cursor: pointer;
     &::before{
-        content: url(/images/location.png);
+        content: url(../images/location.png);
     }
 }
 
@@ -333,15 +333,15 @@ a{
 }
 
 .bedrooms-info::before{
-    content: url(/images/keys.png);
+    content: url(../images/keys.png);
 }
 
 .meals-info::before{
-    content: url(/images/meal.png);
+    content: url(../images/meal.png);
 }
 
 .flights-info::before{
-    content: url(/images/plane.png);
+    content: url(../images/plane.png);
 }
 
 .destination-card-pricing{
