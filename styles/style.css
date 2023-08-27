@@ -99,7 +99,7 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: linear-gradient(84deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
 }
 
 .text {
@@ -253,16 +253,15 @@ a {
   width: 356px;
   background-color: #fff;
   box-shadow: 7.65px 2.339px 7px rgba(0, 0, 0, 0.06);
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
 }
-.destination-card:hover {
-  transform: scale(1.05);
+.destination-card:hover .destination-card-img {
+  transform: scale(1.1);
 }
 
 .destination-card-header {
   position: relative;
   height: 213px;
+  overflow: hidden;
 }
 
 .destination-card-img {
@@ -270,6 +269,7 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.3s ease-in-out;
 }
 
 .destination-location {
@@ -348,7 +348,8 @@ a {
   transition: 0.3s ease-in-out;
 }
 .discover-link:hover {
-  transform: scale(1.1);
+  background-color: #66D6D5;
+  color: #FFF;
 }
 
 .destination-card-link {
@@ -408,6 +409,10 @@ a {
   font-weight: 500;
   cursor: pointer;
   font-family: "work";
+  transition: 0.3s ease-in-out;
+}
+.submit-btn:hover {
+  background-color: #ffd000;
 }
 
 .bottom-footer {
