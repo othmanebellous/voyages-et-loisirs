@@ -3,12 +3,12 @@ mixin destinationsCard
         article.destination-card
             .destination-card-header
                 img(class="destination-card-img", src= destination.image)
-                button(class="destination-location flexCenter")
+                button(class="destination-location flex-center")
             h3.destination-card-title #{destination.title}
-            div(class="destination-card-info flexAlignStart")
+            div(class="destination-card-info flex-align-start")
                 ul.destination-card-list
-                    li(class="bedrooms-info flexAlignCenter") Chambre double
-                    li(class="meals-info flexAlignCenter") Repas selon le programme
-                    li(class="flights-info flexAlignCenter") Vols inclus
+                    li(class="bedrooms-info flex-align-center") Chambre double
+                    li(class="meals-info flex-align-center") Repas selon le programme
+                    li(class="flights-info flex-align-center") Vols inclus
                 .destination-card-pricing A partir #[strong.price #{destination.price} €] TTC / presonne
-                    a(class="discover-link flexCenter", href= destination.link) Découvrir
+                    a(class="discover-link flex-center", href= destination.link) Découvrir

@@ -9,7 +9,7 @@ html(lang="fr")
         script(src="https://kit.fontawesome.com/d24203c984.js" crossorigin="anonymous")
         title Voyages & Loisirs
     body
-        header(class="flexSpaceBetween container")
+        header(class="flex-space-between container")
             .logo
                 a(href="#")
                     img.logo-img(src="images/logo.png", alt="logo")
@@ -22,7 +22,7 @@ html(lang="fr")
                     a.social-link(href="#")
                         img(src="images/facebook.png", alt="facebook")
         main
-            section(class="hero flexAlignCenter")
+            section(class="hero flex-align-center")
                 .container
                     .text
                         h1.hero-title Lorem ipsum dolor sit amet consec tetur adipi
@@ -44,25 +44,25 @@ html(lang="fr")
                 .destination-tabs-wrapper
                     .destination-tabs.container
                         input(class="destination-input", type="radio", name="destinations", id="circuits" checked)
-                        label(class="destination-label flexCenter" for="circuits") Circuits accompagnés
+                        label(class="destination-label flex-center" for="circuits") Circuits accompagnés
                         .destination-cards
                             +destinationsCard
                         input(class="destination-input", type="radio", name="destinations", id="croisieres")
-                        label(class="destination-label flexCenter" for="croisieres") Croisières
+                        label(class="destination-label flex-center" for="croisieres") Croisières
                         .destination-cards
                             +destinationsCard
         footer 
             .top-footer
-                div(class="container flexSpaceBetween")
+                div(class="container flex-space-between")
                     p.newsletter-paragraph #[b Inscrivez-vous] et recevez nos nouveautés et #[b offres] spéciales !
-                    form(class="form flexAlignCenter" action="", method="post")
+                    form(class="form flex-align-center" action="", method="post")
                         input(class="email-input" type="email", name="email", placeholder="E-mail")
-                        button(class="submit-btn flexCenter" type="submit") S'abonner
+                        button(class="submit-btn flex-center" type="submit") S'abonner
             .bottom-footer 
-                div(class="container flexSpaceBetween")
+                div(class="container flex-space-between")
                     nav.legal-links
                         a(class="footer-link" href="#") Mentions légales 
                         a(class="footer-link" href="#") Conditions de vente
                         a(class="footer-link" href="#") Politique de confidentialité
-                    p(class="copyright flexAlignCenter") Voyages et loisirs.fr &copy; #{date.getFullYear()} Tous les droits réservés
+                    p(class="copyright flex-align-center") Voyages et loisirs.fr &copy; #{date.getFullYear()} Tous les droits réservés
                         img(src="images/cookie.png", alt="")

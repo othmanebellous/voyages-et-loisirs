@@ -22,30 +22,30 @@ a{
     color: #000;
 }
 
-.flexCenter{
+.flex-center{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.inlineFlexCenter{
+.inline-flex-center{
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
-.flexSpaceBetween{
+.flex-space-between{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.flexAlignCenter{
+.flex-align-center{
     display: flex;
     align-items: center;
 }
 
-.flexAlignStart{
+.flex-align-start{
     display: flex;
     align-items: start;
 }
