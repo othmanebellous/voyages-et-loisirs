@@ -69,17 +69,37 @@ a{
 
 .social-links{
     margin-top: 10px;
+    display: flex;
 }
 
 .social-link{
-    display: inline-block;
     transition: 0.1s ease-in-out;
+    width: 32px;
+    height: 32px;
+    background-color: #65d5d5;
+    color: #FFF;
+    border-radius: 3px;
     &:not(:last-child){
         margin-right: 8px;
     }
     &:hover{
         transform: scale(1.1);
     }
+}
+
+.social-link-pinterest::before{
+    content: "\f0d2";
+    font-family: "Font Awesome 5 Brands";
+}
+
+.social-link-instagram::before{
+    content: "\f16d";
+    font-family: "Font Awesome 5 Brands";
+}
+
+.social-link-facebook::before{
+    content: "\f39e";
+    font-family: "Font Awesome 5 Brands";
 }
 
 .hero{
